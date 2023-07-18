@@ -6,7 +6,12 @@
 
     <groupId>org.kse.demo</groupId>
     <artifactId>transit-system</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>untitled</module>
+        <module>ts-datamodule</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
@@ -41,6 +46,7 @@
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-resteasy</artifactId>
         </dependency>
+
     </dependencies>
 
     <build>
