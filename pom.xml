@@ -6,12 +6,11 @@
 
     <groupId>org.kse.demo</groupId>
     <artifactId>transit-system</artifactId>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
     <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>untitled</module>
-        <module>ts-datamodule</module>
-    </modules>
+<!--    <modules>-->
+<!--        <module>ts-datamodule</module>-->
+<!--    </modules>-->
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
@@ -46,6 +45,21 @@
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-resteasy</artifactId>
         </dependency>
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-jdbc-postgresql</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-hibernate-orm</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+
 
     </dependencies>
 
